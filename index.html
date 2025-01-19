@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>AWD</title>
+    <meta name="title" content="Adex" />
+    <meta
+      name="description"
+      content="This is a business agency html template made by codewithsadee"
+    />
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-bg.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slide-1.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slide-2.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slide-3.jpg" />
+  </head>
+
+  <body>
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="./assets/images/logo-light.svg"
+            width="74"
+            height="24"
+            alt="Adex home"
+            class="logo-light"
+          />
+
+          <img
+            src="./assets/images/logo-dark.svg"
+            width="74"
+            height="24"
+            alt="Adex home"
+            class="logo-dark"
+          />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo">
+              <img
+                src="./assets/images/logo-light.svg"
+                width="74"
+                height="24"
+                alt="Adex home"
+              />
+            </a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#about" class="navbar-link">About</a>
+            </li>
+
+            <li>
+              <a href="#project" class="navbar-link">Projects</a>
+            </li>
+
+            <!-- <li>
+              <a href="#blog" class="navbar-link">Blog</a>
+            </li> -->
+
+            <li>
+              <a href="#contact" class="navbar-link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="wrapper">
+            <a href="mailto:info@email.com" class="contact-link"
+              >amazingwebdesign@gmail.com</a
+            >
+
+            <a href="tel:001234567890" class="contact-link">08123456780</a>
+          </div>
+
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-dribbble"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- <a href="#" class="btn btn-primary">Free Trial</a> -->
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section id="home"
+          class="section hero has-bg-image"
+          aria-label="home"
+          style="background-image: url('./assets/images/hero-bg.jpg')"
+        >
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 hero-title">
+                Bangun Website Impian Anda dengan Mudah dan Cepat!
+              </h1>
+
+              <p class="hero-text">
+                Jadikan bisnis Anda lebih profesional dan terpercaya dengan website modern yang dirancang khusus untuk kebutuhan Anda. Mulai dari toko online, portofolio, hingga website perusahaan – semua bisa kami wujudkan!
+              </p>
+
+              <div class="btn-wrapper">
+                <a href="#contact" class="btn btn-primary">Pesan Sekarang</a>
+
+                <a href="#project" class="btn btn-outline">Lihat Contoh Website</a>
+              </div>
+            </div>
+
+            <div class="hero-slider" data-slider>
+              <div class="slider-inner">
+                <ul class="slider-container" data-slider-container>
+                  <li class="slider-item">
+                    <figure
+                      class="img-holder"
+                      style="--width: 575; --height: 550"
+                    >
+                      <img
+                        src="./assets/images/hero-slide-1.jpg"
+                        width="575"
+                        height="550"
+                        alt=""
+                        class="img-cover"
+                      />
+                    </figure>
+                  </li>
+
+                  <li class="slider-item">
+                    <div class="hero-card">
+                      <figure
+                        class="img-holder"
+                        style="--width: 575; --height: 550"
+                      >
+                        <img
+                          src="./assets/images/hero-slide-2.jpg"
+                          width="575"
+                          height="550"
+                          alt="hero banner"
+                          class="img-cover"
+                        />
+                      </figure>
+
+                      <button class="play-btn" aria-label="play adex intro">
+                        <ion-icon name="play" aria-hidden="true"></ion-icon>
+                      </button>
+                    </div>
+                  </li>
+
+                  <li class="slider-item">
+                    <figure
+                      class="img-holder"
+                      style="--width: 575; --height: 550"
+                    >
+                      <img
+                        src="./assets/images/hero-slide-3.jpg"
+                        width="575"
+                        height="550"
+                        alt=""
+                        class="img-cover"
+                      />
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+
+              <button
+                class="slider-btn prev"
+                aria-label="slide to previous"
+                data-slider-prev
+              >
+                <ion-icon name="arrow-back"></ion-icon>
+              </button>
+
+              <button
+                class="slider-btn next"
+                aria-label="slide to next"
+                data-slider-next
+              >
+                <ion-icon name="arrow-forward"></ion-icon>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #SERVICE
+      -->
+
+        <section id="about" class="section service" aria-labelledby="service-label">
+          <div class="container">
+            <p class="section-subtitle" id="service-label">Kenapa Pilih Kami</p>
+
+            <h2 class="h2 section-title">
+              Layanan yang kami tawarkan dirancang khusus untuk memenuhi kebutuhan Anda.
+            </h2>
+
+            <ul class="grid-list">
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <h3 class="h4 card-title">Support 24/7</h3>
+
+                  <p class="card-text">
+                    Kami selalu siap membantu Anda kapan saja.
+                  </p>
+
+                  <a href="#" class="btn-text">
+                    <span class="span">Learn More</span>
+
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <ion-icon
+                      name="shield-checkmark-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </div>
+
+                  <h3 class="h4 card-title">SHarga Terjangkau</h3>
+
+                  <p class="card-text">
+                    Solusi terbaik untuk setiap anggaran.
+                  </p>
+
+                  <a href="#" class="btn-text">
+                    <span class="span">Learn More</span>
+
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <ion-icon
+                      name="cloud-download-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </div>
+
+                  <h3 class="h4 card-title">Proses Cepat</h3>
+
+                  <p class="card-text">
+                    Siap membantu membangun website impian Anda dalam waktu singkat tanpa mengurangi kualitas.
+                  </p>
+
+                  <a href="#" class="btn-text">
+                    <span class="span">Learn More</span>
+
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <ion-icon
+                      name="pie-chart-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </div>
+
+                  <h3 class="h4 card-title">Desain Modern dan Responsif</h3>
+
+                  <p class="card-text">
+                    Website Anda akan terlihat sempurna di desktop maupun smartphone.
+                  </p>
+
+                  <a href="#" class="btn-text">
+                    <span class="span">Learn More</span>
+
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #ABOUT
+      -->
+
+        <section id="" class="about" aria-labelledby="about-label">
+          <div class="container">
+            <figure class="about-banner">
+              <img
+                src="./assets/images/about-banner.png"
+                width="800"
+                height="580"
+                loading="lazy"
+                alt="about banner"
+                class="w-100"
+              />
+            </figure>
+
+            <div class="about-content">
+              <p class="section-subtitle" id="about-label">Cara Kerja Kami</p>
+
+              <h2 class="h2 section-title">
+                Kami menghadirkan solusi untuk membuat hidup lebih mudah bagi klien kami.
+              </h2>
+
+              <ul>
+                <li class="about-item">
+                  <div class="accordion-card expanded" data-accordion>
+                    <h3 class="card-title">
+                      <button class="accordion-btn" data-accordion-btn>
+                        <ion-icon
+                          name="chevron-down-outline"
+                          aria-hidden="true"
+                          class="down"
+                        ></ion-icon>
+
+                        <spna class="span h5">Konsultasi Gratis</spna>
+                      </button>
+                    </h3>
+
+                    <p class="accordion-content">
+                      Kami memulai dengan mendengarkan kebutuhan Anda secara detail melalui konsultasi gratis. Tim kami akan memberikan solusi terbaik yang sesuai dengan visi, tujuan, dan anggaran Anda.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="about-item">
+                  <div class="accordion-card" data-accordion>
+                    <h3 class="card-title">
+                      <button class="accordion-btn" data-accordion-btn>
+                        <ion-icon
+                          name="chevron-down-outline"
+                          aria-hidden="true"
+                          class="down"
+                        ></ion-icon>
+
+                        <spna class="span h5">Desain dan Pengembangan</spna>
+                      </button>
+                    </h3>
+
+                    <p class="accordion-content">
+                      Setelah memahami kebutuhan Anda, kami mulai merancang desain website yang modern, responsif, dan sesuai keinginan. Pengembangan dilakukan secara profesional untuk memastikan website berfungsi dengan sempurna.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="about-item">
+                  <div class="accordion-card" data-accordion>
+                    <h3 class="card-title">
+                      <button class="accordion-btn" data-accordion-btn>
+                        <ion-icon
+                          name="chevron-down-outline"
+                          aria-hidden="true"
+                          class="down"
+                        ></ion-icon>
+
+                        <spna class="span h5">Peluncuran Website</spna>
+                      </button>
+                    </h3>
+
+                    <p class="accordion-content">
+                      Ketika semuanya sudah siap, website Anda akan diluncurkan secara resmi. Kami memastikan semua fitur berjalan lancar sehingga Anda dapat langsung menggunakannya untuk mendukung bisnis Anda.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #FEATURE
+      -->
+
+
+
+        <!-- 
+        - #STATS
+      -->
+
+
+
+        <!-- 
+        - #PROJECT
+      -->
+
+        <section id="project" class="section project" aria-labelledby="project-label">
+          <div class="container">
+            <p class="section-subtitle" id="project-label">Layanan Kami</p>
+
+            <h2 class="h2 section-title">
+              Lihat beberapa proyek luar biasa kami dengan ide-ide kreatif dan desain yang hebat.
+            </h2>
+
+            <ul class="grid-list">
+              <li>
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 560; --height: 350"
+                  >
+                    <img
+                      src="./assets/images/portofolio-3.png"
+                      width="560"
+                      height="350"
+                      loading="lazy"
+                      alt="Ligula tristique quis risus"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="https://haidaraldy12.github.io/landing-page-portofolio/#" class="card-title"
+                        >Website Portofolio</a
+                      >
+                    </h3>
+
+                    <p class="card-text">
+                      Tunjukkan karya Anda kepada dunia.
+                    </p>
+
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <ion-icon
+                          name="calendar-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <time class="meta-text" datetime="2022-04-14"
+                          >14 Apr 2022</time
+                        >
+                      </li>
+
+                      <li class="card-meta-item">
+                        <ion-icon
+                          name="document-text-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="meta-text">Coding</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 560; --height: 350"
+                  >
+                    <img
+                      src="./assets/images/echoword.png"
+                      width="560"
+                      height="350"
+                      loading="lazy"
+                      alt="Nullam id dolor elit id nibh"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a target = "_blank" href="https://echoword.my.id" class="card-title"
+                        >Web Portofolio & Perusahaan</a
+                      >
+                    </h3>
+
+                    <p class="card-text">
+                      Bangun citra profesional untuk bisnis Anda.
+                    </p>
+
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <ion-icon
+                          name="calendar-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <time class="meta-text" datetime="2022-03-29"
+                          >29 Mar 2022</time
+                        >
+                      </li>
+
+                      <li class="card-meta-item">
+                        <ion-icon
+                          name="document-text-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="meta-text">Workspace</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 560; --height: 350"
+                  >
+                    <img
+                      src="./assets/images/lakuto-2.png"
+                      width="560"
+                      height="350"
+                      loading="lazy"
+                      alt="Ultricies fusce porta elit"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="http://lakuto.my.id/" class="card-title"
+                        >Website Toko Online</a
+                      >
+                    </h3>
+
+                    <p class="card-text">
+                      Kelola produk dan pesanan dengan mudah.
+                    </p>
+
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <ion-icon
+                          name="calendar-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <time class="meta-text" datetime="2022-02-26"
+                          >26 Feb 2022</time
+                        >
+                      </li>
+
+                      <li class="card-meta-item">
+                        <ion-icon
+                          name="document-text-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="meta-text">E-Commerce</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #CTA
+      -->
+
+        <section id="contact" class="cta" aria-label="call to action">
+          <div class="container">
+            <h2 class="h2 section-title">
+              Transformasi bisnis Anda dimulai dari sini. Let's create something amazing!
+            </h2>
+
+            <a href="#" class="btn btn-primary">Hubungi Kami Sekarang</a>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container grid-list">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img
+              src="./assets/images/logo-light.svg"
+              width="74"
+              height="24"
+              alt="Adex home"
+            />
+          </a>
+
+          <p class="footer-text">
+            &copy; 2025 Amazing Web Design. <br />
+            All rights reserved.
+          </p>
+
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-dribbble"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="footer-list">
+          <li>
+            <p class="h4 footer-list-title">Alamat Kami</p>
+          </li>
+
+          <li>
+            <address class="footer-text">
+              Malang-Sidoarjo Jawa Timur, Indonesia
+            </address>
+          </li>
+
+          <li>
+            <a href="mailto:info@email.com" class="footer-link"
+              >info@email.com</a
+            >
+          </li>
+
+          <li>
+            <a href="tel:001234567890" class="footer-link"
+              >00 (123) 456 78 90</a
+            >
+          </li>
+        </ul>
+
+      </div>
+    </footer>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
